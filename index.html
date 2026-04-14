@@ -140,11 +140,7 @@ footer{text-align:center;padding:20px;background:#eee}
 function submitForm(e){
   e.preventDefault();
   let name=document.getElementById('name').value;
-  let msg=document.getElementById('msg').value;
-  let text=`Hi, I'm ${name}. I need interior design. ${msg}`;
-  let url=`https://wa.me/918825486243?text=${encodeURIComponent(text)}`;
-  document.getElementById('wa').href=url;
-  window.location.href=url;
+  let msg=document.getElementById('msg').value;
 }
 function openModal(src){document.getElementById('modal').style.display='flex';document.getElementById('modalImg').src=src}
 function closeModal(){document.getElementById('modal').style.display='none'}
